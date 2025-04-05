@@ -23,6 +23,13 @@ public class CurrentAccount extends Account {
     public void setOverdraftlim(double limit){
         this.overdraftlim = limit;
     }
+
+    public static double getAIR() {
+        return AIR;
+    }
+
+
+
     public static void setAIR(double newRate){
         AIR = newRate;
     }
