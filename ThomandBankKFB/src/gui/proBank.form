@@ -5,7 +5,9 @@
     <constraints>
       <xy x="20" y="20" width="635" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-2556034"/>
+    </properties>
     <border type="none"/>
     <children>
       <tabbedpane id="471ad" binding="tabbedPane">
@@ -14,7 +16,9 @@
             <preferred-size width="600" height="300"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-15418217"/>
+        </properties>
         <border type="none"/>
         <children>
           <grid id="5f639" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -30,7 +34,9 @@
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <background color="-2411777"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <component id="1d2fa" class="javax.swing.JLabel">
@@ -79,7 +85,9 @@
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <background color="-11235073"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <component id="b9c50" class="javax.swing.JButton" binding="depositButton" default-binding="true">
@@ -132,7 +140,9 @@
             <constraints>
               <tabbedpane title="Bank Officer"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-15728764"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="10926" class="javax.swing.JButton" binding="changeAIRButton" default-binding="true">
