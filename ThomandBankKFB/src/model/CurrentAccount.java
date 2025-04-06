@@ -24,6 +24,12 @@ public class CurrentAccount extends Account {
         this.overdraftlim = limit;
     }
 
+
+    public double getOverLim(){
+        return overdraftlim;
+    }
+
+
     public static double getAIR() {
         return AIR;
     }

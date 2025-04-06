@@ -7,6 +7,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
 public class changeair {
     private JPanel rootPanel;
     private JRadioButton depositRadioButton;
@@ -17,10 +18,15 @@ public class changeair {
 
 
     public changeair() {
+
+        newAIRtxtField.setEditable(false);
+
+
         depositRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 oldAIRtxtField.setText(String.format("%.3f", DepositAccount.getAIR()));
+                newAIRtxtField.setEditable(true);
             }
         });
 
@@ -29,6 +35,7 @@ public class changeair {
             @Override
             public void actionPerformed(ActionEvent e) {
                 oldAIRtxtField.setText(String.format("%.3f", CurrentAccount.getAIR()));
+                newAIRtxtField.setEditable(true);
             }
         });
         changeAIRButton.addActionListener(new ActionListener() {
@@ -48,11 +55,13 @@ public class changeair {
                         JOptionPane.showMessageDialog(rootPanel,"Deposit Account AIR updated");
                         oldAIRtxtField.setText(String.format("%.3f",DepositAccount.getAIR()));
                         newAIRtxtField.setText("");
+
                     } else if (currentRadioButton.isSelected()){
                         CurrentAccount.setAIR(newAIR);
                         JOptionPane.showMessageDialog(rootPanel,"Current Account AIR updated");
                         oldAIRtxtField.setText(String.format("%.3f", CurrentAccount.getAIR()));
                         newAIRtxtField.setText("");
+
                     } else {
                         JOptionPane.showMessageDialog(rootPanel,"Please select an account type"
                         ,"Error", JOptionPane.ERROR_MESSAGE);
