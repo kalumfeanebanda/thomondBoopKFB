@@ -24,6 +24,7 @@ public class proBank {
     private JButton createNewAccountButton;
     private JButton changeAIRButton;
     private JButton changeOverDraftLimitButton;
+    private JButton calculateInterestButton;
 
 
     private Account chosenOne;
@@ -183,6 +184,13 @@ public class proBank {
                 editOverdraft.display();
             }
         });
+        calculateInterestButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                interestCalc.display(chosenOne);
+
+            }
+        });
     }
 
 
@@ -193,6 +201,7 @@ public class proBank {
         logoutButton.setVisible(false);
         depositAccountRadioButton.setVisible(false);
         currentAccountRadioButton.setVisible(false);
+        calculateInterestButton.setVisible(false);
 
     }
 
@@ -250,6 +259,7 @@ private void functions() {
                     withdrawButton.setVisible(true);
                     checkBalanceButton.setVisible(true);
                     logoutButton.setVisible(true);
+                    calculateInterestButton.setVisible(true);
 
 
                 } else {

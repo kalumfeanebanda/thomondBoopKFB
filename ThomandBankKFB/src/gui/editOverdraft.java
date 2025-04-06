@@ -48,6 +48,7 @@ public class editOverdraft {
                     newOverLimit.setVisible(true);
                     newOverLimLabel.setVisible(true);
                     changeOverdraftLimitButton.setVisible(true);
+                    oldLimittxtField.setEditable(false);
 
                     oldLimittxtField.setText(String.format("%.2f", chosenAccount.getOverLim()));
 

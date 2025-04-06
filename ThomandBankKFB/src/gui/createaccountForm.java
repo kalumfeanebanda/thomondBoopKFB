@@ -27,6 +27,7 @@ public class createaccountForm {
 
 
 
+        createacctxtfield.setEditable(false);
 
         addNewAccountButton.addActionListener(new ActionListener() {
             @Override
@@ -107,6 +108,7 @@ public class createaccountForm {
             public void actionPerformed(ActionEvent e) {
                 overLimLabel.setVisible(false);
                 overdraftLimtxtField.setVisible(false);
+                createacctxtfield.setEditable(true);
             }
         });
         currentRadioButton.addActionListener(new ActionListener() {
@@ -115,7 +117,7 @@ public class createaccountForm {
 
                     overLimLabel.setVisible(true);
                     overdraftLimtxtField.setVisible(true);
-
+                createacctxtfield.setEditable(true);
             }
         });
     }
