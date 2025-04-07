@@ -32,7 +32,6 @@ public class proBank {
 
      public static ArrayList<Account> thomondAccounts = new ArrayList<>();
     public proBank() {
-    //    initComponents();
         populateMyAccounts();
         functions();
         hidestuff();
